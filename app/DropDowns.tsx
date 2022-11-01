@@ -1,5 +1,8 @@
 "use client"
 
+import TypeDropdown from "./TypeDropdown";
+import TopicDropdown from "./TopicDropdown";
+
 
 
 const DropDowns = () => {
@@ -31,9 +34,21 @@ const DropDowns = () => {
           <h3 className="text-lg text-slate-500 font-medium">Or search by:</h3>
         </div>
         <div className="col-span-1  w-full lg:col-span-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
-          <div className="w-full rounded-lg border border-gray-300 py-3">
+          <div className="w-full rounded-lg border border-gray-300 py-3 relative isolate">
             <h3 className="text-center">Type</h3>
-
+             <TypeDropdown />
+          </div>
+          <div className="w-full rounded-lg border border-gray-300 py-3 relative isolate">
+            <h3 className="text-center">Topic</h3>
+             <TopicDropdown />
+          </div>
+          <div className="w-full rounded-lg border border-gray-300 py-3 relative isolate">
+            <h3 className="text-center">Topic</h3>
+             <TopicDropdown />
+          </div>
+          <div className="w-full rounded-lg border border-gray-300 py-3 relative isolate">
+            <h3 className="text-center">Topic</h3>
+             <TopicDropdown />
           </div>
         </div>
       </div>
