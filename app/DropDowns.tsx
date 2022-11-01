@@ -2,6 +2,8 @@
 
 import TypeDropdown from "./TypeDropdown";
 import TopicDropdown from "./TopicDropdown";
+import DurationDropdown from "./DurationDropdown";
+import AgeDropdown from "./AgeDropdown";
 
 
 
@@ -43,12 +45,12 @@ const DropDowns = () => {
              <TopicDropdown />
           </div>
           <div className="w-full rounded-lg border border-gray-300 py-3 relative isolate">
-            <h3 className="text-center">Topic</h3>
-             <TopicDropdown />
+            <h3 className="text-center">Duration</h3>
+             <DurationDropdown />
           </div>
           <div className="w-full rounded-lg border border-gray-300 py-3 relative isolate">
-            <h3 className="text-center">Topic</h3>
-             <TopicDropdown />
+            <h3 className="text-center">Age Group</h3>
+             <AgeDropdown />
           </div>
         </div>
       </div>
