@@ -1,4 +1,4 @@
-import Image from 'next/image'
+
 import "../styles/globals.css";
 import DropDowns from './DropDowns';
 import Hero from './Hero';
