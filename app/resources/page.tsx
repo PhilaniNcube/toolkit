@@ -1,9 +1,4 @@
-import React from 'react'
-
-const page = () => {
-  return (
-    <div>page</div>
-  )
-}
-
-export default page
+const resources = () => {
+  return <div>Resources</div>;
+};
+export default resources;

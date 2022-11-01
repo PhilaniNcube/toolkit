@@ -1,9 +1,4 @@
-import React from 'react'
-
 const page = () => {
-  return (
-    <div>page</div>
-  )
-}
-
-export default page
+  return <div>Search</div>;
+};
+export default page;

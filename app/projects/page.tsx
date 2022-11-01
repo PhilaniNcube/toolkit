@@ -1,9 +1,17 @@
-import React from 'react'
+import { projects } from "../../data/projects";
 
-const page = () => {
-  return (
-    <div>page</div>
-  )
+async function getProjects() {
+
+
+  return projects;
 }
 
-export default page
+ export default async function Page() {
+
+  const projects = await getProjects()
+
+  console.log({projects})
+
+   return <main>Projects</main>;
+ };
+

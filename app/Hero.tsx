@@ -3,10 +3,10 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <section className="container mx-auto">
+    <section className="container px-4 mx-auto">
       <div className="py-8 w-full gap-6 grid grid-cols-2">
         <div className="w-full flex items-center">
-          <h1 className="font-extrabold text-slate-800 text-3xl md:text-5xl lg:text-[4rem] xl:text-[5rem]">
+          <h1 className="font-extrabold text-slate-800 text-xl md:text-5xl lg:text-[4rem] xl:text-[5rem]">
             Leaner-Led <br />School-Based <br />Interventions
           </h1>
         </div>
