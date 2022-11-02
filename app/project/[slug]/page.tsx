@@ -44,11 +44,9 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
                 {project?.description}
               </p>
 
-              <div className="border-1 border-slate-500 rounded-lg grid grid-cols-4">
-
-
-                <div className="w-full">
-                  <h4 className="text-lg font-bold text-slate-700">
+              <div className="border-2 border-slate-500 rounded-lg gap-2 grid grid-cols-4">
+                <div className="w-full border-r-2 p-3 border-slate-500">
+                  <h4 className="text-lg font-medium text-slate-500 mb-2">
                     Intervention Type
                   </h4>
                   <div className="flex flex-col space-y-3">
@@ -68,13 +66,15 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
                             d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
                           />
                         </svg>
-                        <p className="text-md text-slate-700 font-medium">{item}</p>
+                        <p className="text-md text-slate-700 font-medium">
+                          {item}
+                        </p>
                       </span>
                     ))}
                   </div>
                 </div>
-                <div className="w-full">
-                  <h4 className="text-lg font-bold text-slate-700">
+                <div className="w-full border-r-2 p-3 border-slate-500">
+                  <h4 className="text-lg font-medium text-slate-500 mb-2">
                     Topics Covered
                   </h4>
                   <div className="flex flex-col space-y-3">
@@ -94,13 +94,15 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
                             d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
                           />
                         </svg>
-                        <p className="text-md text-slate-700 font-medium">{item}</p>
+                        <p className="text-md text-slate-700 font-medium">
+                          {item}
+                        </p>
                       </span>
                     ))}
                   </div>
                 </div>
-                <div className="w-full">
-                  <h4 className="text-lg font-bold text-slate-700">
+                <div className="w-full border-r-2 border-slate-500 p-3">
+                  <h4 className="text-lg font-medium text-slate-500 mb-2">
                     Duration
                   </h4>
                   <div className="flex flex-col space-y-3">
@@ -120,14 +122,16 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
                             d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
                           />
                         </svg>
-                        <p className="text-md text-slate-700 font-medium">{item}</p>
+                        <p className="text-md text-slate-700 font-medium">
+                          {item}
+                        </p>
                       </span>
                     ))}
                   </div>
                 </div>
-                <div className="w-full">
-                  <h4 className="text-lg font-bold text-slate-700">
-                   Age Group
+                <div className="w-full p-3">
+                  <h4 className="text-lg font-medium text-slate-500 mb-2">
+                    Age Group
                   </h4>
                   <div className="flex flex-col space-y-3">
                     {project?.age.map((item, i) => (
@@ -146,14 +150,51 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
                             d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
                           />
                         </svg>
-                        <p className="text-md text-slate-700 font-medium">{item}</p>
+                        <p className="text-md text-slate-700 font-medium">
+                          {item}
+                        </p>
                       </span>
                     ))}
                   </div>
                 </div>
               </div>
 
-
+              <div className="flex justify-between items-center mt-4 gap-4">
+                <button className="bg-green-600 text-white font-medium text-lg w-1/2 flex justify-center py-2 rounded-lg items-center">
+                  <p>Full description</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25"
+                    />
+                  </svg>
+                </button>
+                <button className="bg-green-600 text-white font-medium text-lg w-1/2 flex justify-center py-2 rounded-lg items-center">
+                  <p>Sample Manual</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </section>
         </div>
