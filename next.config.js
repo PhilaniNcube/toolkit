@@ -2,4 +2,13 @@
 module.exports = {
   reactStrictMode: true,
   experimental: { appDir: true },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+
+      },
+    ],
+  },
 };
