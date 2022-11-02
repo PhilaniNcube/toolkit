@@ -40,7 +40,7 @@ const page = async ({params: {slug}}:{params: {slug:string}}) => {
         </p>
 
         <Link
-          href="/"
+          href={`/project/${project?.slug}`}
           className="bg-green-500 rounded-md text-white font-medium w-1/2 text-xl px-6 py-2"
         >
           View Project
