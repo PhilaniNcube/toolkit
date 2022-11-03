@@ -59,7 +59,7 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
                           viewBox="0 0 24 24"
                           strokeWidth={1.5}
                           stroke="currentColor"
-                          className="w-6 h-6"
+                          className="w-4 h-4"
                         >
                           <path
                             strokeLinecap="round"
@@ -67,7 +67,7 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
                             d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
                           />
                         </svg>
-                        <p className="text-md text-slate-700 font-medium">
+                        <p className="text-sm text-slate-700 font-medium">
                           {item}
                         </p>
                       </span>
@@ -87,7 +87,7 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
                           viewBox="0 0 24 24"
                           strokeWidth={1.5}
                           stroke="currentColor"
-                          className="w-6 h-6"
+                          className="w-4 h-4"
                         >
                           <path
                             strokeLinecap="round"
@@ -95,7 +95,7 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
                             d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
                           />
                         </svg>
-                        <p className="text-md text-slate-700 font-medium">
+                        <p className="text-sm text-slate-700 font-medium">
                           {item}
                         </p>
                       </span>
@@ -115,7 +115,7 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
                           viewBox="0 0 24 24"
                           strokeWidth={1.5}
                           stroke="currentColor"
-                          className="w-6 h-6"
+                          className="w-4 h-4"
                         >
                           <path
                             strokeLinecap="round"
@@ -123,7 +123,7 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
                             d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
                           />
                         </svg>
-                        <p className="text-md text-slate-700 font-medium">
+                        <p className="text-sm text-slate-700 font-medium">
                           {item}
                         </p>
                       </span>
@@ -143,7 +143,7 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
                           viewBox="0 0 24 24"
                           strokeWidth={1.5}
                           stroke="currentColor"
-                          className="w-6 h-6"
+                          className="w-4 h-4"
                         >
                           <path
                             strokeLinecap="round"
@@ -151,7 +151,7 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
                             d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
                           />
                         </svg>
-                        <p className="text-md text-slate-700 font-medium">
+                        <p className="text-sm text-slate-700 font-medium">
                           {item}
                         </p>
                       </span>
@@ -169,7 +169,7 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6"
+                    className="w-4 h-4"
                   >
                     <path
                       strokeLinecap="round"
@@ -186,7 +186,7 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="w-6 h-6"
+                    className="w-4 h-4"
                   >
                     <path
                       strokeLinecap="round"
