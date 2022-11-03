@@ -27,16 +27,16 @@ const [viewPort, setViewPort] = useState({
           latitude: project.coordinates.lat,
           zoom: 14,
         }}
-        style={{ width: "100%", height: "65vh" }}
+        style={{ width: "100%", height: "90vh" }}
         mapStyle="mapbox://styles/mapbox/streets-v9"
         mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_TOKEN}
       >
         <Marker
           longitude={project.coordinates.lng}
           latitude={project.coordinates.lat}
-          anchor="bottom"
+          anchor="center"
         >
-          <Image src="/images/marker.png" alt="Marker" width={20} height={20} />
+          <Image className="z-30" src="/images/marker.png" alt="Marker" width={20} height={20} />
         </Marker>
       </ReactMapGL>
     </div>
