@@ -2,12 +2,13 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
-import { projects } from "../../../data/projects";
+import { IProject, projects } from "../../../data/projects";
+import Map from "./Map";
 
 async function getProject(slug: string) {
   const project = projects.find((project) => project.slug === slug);
 
-  return project;
+  return project as IProject;
 }
 
 const page = async ({ params: { slug } }: { params: { slug: string } }) => {
@@ -196,7 +197,34 @@ const page = async ({ params: { slug } }: { params: { slug: string } }) => {
                 </button>
               </div>
             </div>
+            <div className="w-full">
+              <h3 className="text-lg text-slate-700 flex space-x-2">
+                <strong>Organisation:</strong> <pre>{project.title}</pre>
+              </h3>
+              <h3 className="text-lg text-slate-700 flex space-x-2">
+                <strong>Address:</strong> <pre>{project.address}</pre>
+              </h3>
+              <h3 className="text-lg text-slate-700 flex space-x-2">
+                <strong>Contact Person:</strong> <pre>{project.contact}</pre>
+              </h3>
+              <h3 className="text-lg text-slate-700 flex space-x-2">
+                <strong>Tel:</strong> <pre>{project.tel}</pre>
+              </h3>
+
+              <div className="my-2 h-1 w-full bg-gray-500">
+                <hr />
+              </div>
+
+              <h3 className="text-lg text-slate-700 flex space-x-2">
+                <strong>Partner Organisations</strong>
+              </h3>
+
+              {project.partners.map((partner, i) => (
+                <p key={i} className="text-md w-full justify-between flex  items-center"><strong>{partner.name}: {"  "}</strong> {partner.province}</p>
+              ))}
+            </div>
           </section>
+          <Map project={project} />
         </div>
       </main>
     </Fragment>
