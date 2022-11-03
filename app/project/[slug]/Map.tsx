@@ -36,7 +36,7 @@ const [viewPort, setViewPort] = useState({
           latitude={project.coordinates.lat}
           anchor="center"
         >
-          <img  src="/images/marker.png" alt="Marker" width={20} height={20} />
+
         </Marker>
       </ReactMapGL>
     </div>
