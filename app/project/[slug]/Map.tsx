@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
-import Image from "next/image";
+
 import { useState } from "react";
 import ReactMapGL, { Marker } from "react-map-gl";
 import { IProject } from "../../../data/projects";
@@ -36,7 +36,7 @@ const [viewPort, setViewPort] = useState({
           latitude={project.coordinates.lat}
           anchor="center"
         >
-          <Image className="z-30" src="/images/marker.png" alt="Marker" width={20} height={20} />
+          <img  src="/images/marker.png" alt="Marker" width={20} height={20} />
         </Marker>
       </ReactMapGL>
     </div>
