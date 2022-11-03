@@ -3,7 +3,7 @@
 
 import { useState } from "react";
 import ReactMapGL, { Marker } from "react-map-gl";
-import { IProject } from "../../../data/projects";
+import { IProject } from "../data/projects";
 
 type ComponentProps = {
   project:IProject

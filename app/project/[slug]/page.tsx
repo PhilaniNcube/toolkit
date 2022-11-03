@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
 import { IProject, projects } from "../../../data/projects";
-import Map from "./Map";
+import Map from "../../../components/Map";
 
 async function getProject(slug: string) {
   const project = projects.find((project) => project.slug === slug);
