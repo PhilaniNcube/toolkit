@@ -11,13 +11,7 @@ type ComponentProps = {
 
 const Map = ({project}:ComponentProps) => {
 
-const [viewPort, setViewPort] = useState({
-  latitude: project.coordinates.lat,
-  longitude: project.coordinates.lng,
-  width: "100%",
-  height: "100%",
-  zoom: 10,
-});
+
 
   return (
     <div className="w-full h-full oveflow-hidden">
@@ -31,13 +25,13 @@ const [viewPort, setViewPort] = useState({
         mapStyle="mapbox://styles/mapbox/streets-v9"
         mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_TOKEN}
       >
-        <Marker
+        {/* <Marker
           longitude={project.coordinates.lng}
           latitude={project.coordinates.lat}
           anchor="center"
         >
 
-        </Marker>
+        </Marker> */}
       </ReactMapGL>
     </div>
   );
